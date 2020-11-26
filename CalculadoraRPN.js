@@ -330,9 +330,12 @@ class CalculadoraCientifica extends Calculadora {
     factorialCalculo(n) {
         return n ? n * this.factorialCalculo(n - 1) : 1;
     }
-
+    
     factorial() {
-        this.pantalla = Number(this.factorialCalculo(this.getNumeroPantalla())).toString();
+        if(this.getNumeroPantalla()<0)
+            this.pantalla = "Introduzca un número positivo";
+        else
+            this.pantalla = Number(this.factorialCalculo(this.getNumeroPantalla())).toString();
         this.actualizarPantalla();
     }
 
