@@ -429,7 +429,7 @@ class CalculadoraRPN extends CalculadoraCientifica{
         else
             this.pila.push(Number(input));
             this.pantalla = ""; //Permite que al iniciar una nueva operación (como escribir un dígito) no se concatene con lo anterior en pantalla
-            document.getElementById("pantalla").value = input.toString(); //TODO cambiar para que se muestre toda la pila
+            document.getElementById("pantalla").value = input.toString();
             this.actualizarPantallaPila();
             
     }
@@ -441,7 +441,7 @@ class CalculadoraRPN extends CalculadoraCientifica{
     }
 
     actualizarPantallaPila(){
-        document.getElementById("pila").value = this.pila.showStack(); //TODO cambiar formato
+        document.getElementById("pila").value = this.pila.showStack();
     }
 
     /**
@@ -545,7 +545,7 @@ var pila = new Stack();
 console.log(pila.pop()); //Debe imprimir "Empty Stack"
 console.log(pila.isEmpty()); //Debe imprimir "True"
 pila.push(1);
-pila.push("2");
+pila.push("Segundo");
 pila.push(3);
 console.log(pila.showStack()); ////Debe imprimir 3, "Segundo" y 1
 console.log(pila.pop()); //Debe imprimir 3
