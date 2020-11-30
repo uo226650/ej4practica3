@@ -291,8 +291,7 @@ class CalculadoraCientifica extends Calculadora {
     pi() {
         var numero = this.pantalla;
         if (isNaN(numero)) {
-            var ultimoCaracter = pantalla.value.substring(pantalla.value.length - 1, pantalla.value.length)
-            debugger;
+            var ultimoCaracter = pantalla.value.substring(pantalla.value.length - 1, pantalla.value.length);
             if (!isNaN(ultimoCaracter)) {
                 this.pantalla = Math.PI.toString();
                 this.actualizarPantalla();
@@ -311,8 +310,7 @@ class CalculadoraCientifica extends Calculadora {
     e() {
         var numero = this.pantalla;
         if (isNaN(numero)) {
-            var ultimoCaracter = pantalla.value.substring(pantalla.value.length - 1, pantalla.value.length)
-            debugger;
+            var ultimoCaracter = pantalla.value.substring(pantalla.value.length - 1, pantalla.value.length);
             if (!isNaN(ultimoCaracter)) {
                 this.pantalla = Math.E.toString();
                 this.actualizarPantalla();
