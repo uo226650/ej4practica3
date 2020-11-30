@@ -1,3 +1,4 @@
+/*Redefinición de 'text-align' para el elemento #pantalla solo en media query*/
 /*(0,0,1)*/
 header, footer {
     text-align: center;
