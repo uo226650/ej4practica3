@@ -539,6 +539,7 @@ Tal y como se muestra en la imagen de la calculadora científica de Windows 10 e
 
 
 //DEBUGGING la pila
+/*
 var pila = new Stack();
 console.log(pila.pop()); //Debe imprimir "Empty Stack"
 console.log(pila.isEmpty()); //Debe imprimir "True"
@@ -547,7 +548,7 @@ pila.push("Segundo");
 pila.push(3);
 console.log(pila.showStack()); ////Debe imprimir 3, "Segundo" y 1
 console.log(pila.pop()); //Debe imprimir 3
-console.log(pila.showStack()); //Debe imprimir "Segundo" y 1
+console.log(pila.showStack()); //Debe imprimir "Segundo" y 1*/
 
 var pilaNueva = new Stack();
 var calculadora = new CalculadoraRPN(pilaNueva);
