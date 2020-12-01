@@ -40,13 +40,13 @@ main{
 
 /*(1,0,0)*/
 #Enter{
-    grid-row: span 2;
-    grid-column: span 2;
+    grid-row-end: span 2;
+    grid-column-end: span 2;
 }
 
 /*(1,0,0)*/
 #delete{
-    grid-column: span 2;
+    grid-column-end: span 2;
 }
 
 /*(0,1,1)*/
